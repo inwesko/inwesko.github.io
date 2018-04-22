@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>INWESKO</title>
+</head>
+
+		<body>
+				<style>
+				body{
+				margin:0;
+				padding:0;
+			 font-size:100%;
+			 line-height: 1.6;
+			 font-family: Arial, Helvetica, sans-serif;
+				}
+				header{
+				background: black;
+				color: white;
+				padding:8px 0px 6px 40px;
+				height:45px;
+				}
+				header h1{
+				display: inline;
+				font-family: 'Oswald' , sans-serif;
+				font-weight:400;
+				font-size: 32px;
+				float: left;
+				margin-top: 0px;
+				margin-right: 10px;
+				}
+				nav ul{
+				display: inline;
+				padding: 0px;
+				float:left;
+				}
+				nav ul li {
+				display: inline-block;
+				list-style-type:none;
+				color:white;
+				float: left;
+				margin-left: 10px;
+				}
+				nav ul li a{
+				color:white;
+				text-decoration: none;
+				}
+				#nav{
+				font-family:'Montserrat',sans-serif;
+				}
+				.active{
+				background-color: red;
+				padding: 30px 10px 16px 10px;
+				
+				}
+				.divider{
+				background-color: red;
+				height: 5px;
+				}
+				.activeblack:hover{
+				background-color:red;
+				}
+				#wrapper{
+  position: relative;
+  width:100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform:translateY(-50%);
+  color:#fff;
+}
+
+.layer img{
+  position: absolute;
+  width:35%;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.layer h1{
+  font-size:2em;
+}
+
+.bottom{
+  background:#222;
+  z-index:1;
+}
+
+.bottom .content-body{
+  right:5%;
+}
+
+.bottom h1{
+  color:#FDAB00;
+}
+
+.top{
+  background:#eee;
+  color:#222;
+  z-index:2;
+  width:50vw;
+}
+
+.top .content-body{
+  left: 5%;
+  color:#222;
+}
+
+.handle{
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #FDAB00;
+  width:5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+  top:50%;
+  transform:rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-30deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+  transform: skew(30deg);
+  margin-left:1000px;
+}
+
+@media(max-width:768px){
+  body{
+    font-size:75%;
+  }
+}
+				</style>
+	<header>
+			<nav>
+	<h1>I N W Ξ S K  O </h1>
+		<ul>
+	<li><a class='active' href=''>HOME</a></li>
+	<li><a class='activeblack' href=''>GAMES</a></li>
+	<li><a class='activeblack' href=''>ABOUT US</a></li>
+	<li><a class='activeblack' href=''>CONTACTS</a></li>
+		</ul>
+			</nav>
+	</header>
+				<div class='divider'></div>
+				
+				
+				 <section id="wrapper" class="skewed">
+    <div class="layer bottom">
+      <div class="content-wrap">
+        <div class="content-body">
+          <h1>Don't have an account?</h1>
+          <p>If you Don't have an account,Click Here!</p>
+        </div>
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <div class="layer top">
+        <div class="content-wrap">
+          <div class="content-body">
+            <h1>Lost your password?</h1>
+            <p>If you Lost your password,Click Here!</p>
+          </div>
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div class="handle"></div>
+	  <script src='games.js'></script>
+						
+				
+		</body>
+	</html>
