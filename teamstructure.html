@@ -6,23 +6,20 @@
     <meta name='viewport' content='width=device-width,initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>INWESKO</title>
-    <link href='WEB-5.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-	  <style>
-		 
-		  body{
-  margin:0;
-  padding:0;
-  font-size:100%;
-  line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
+  <style>
+  body{
+
+			margin: auto;
+		padding: auto;
 }
-		 header{
+
+header{
 				background: black;
 				color: white;
-				padding:8px 0px 0px 40px;
+				padding:8px 0px 6px 40px;
 				height:45px;
 				}
 				header h1{
@@ -31,8 +28,8 @@
 				font-weight:400;
 				font-size: 32px;
 				float: left;
-				margin-top: 0px;
-				margin-right: 10px;
+				margin: auto;
+				padding: auto;
 				}
 				nav ul{
 				display: inline;
@@ -61,9 +58,14 @@
 				.divider{
 				background-color: red;
 				height: 5px;
+				padding-bottom:0;
 				}
 				.activeblack:hover{
 				background-color:red;
+				}
+				img{
+				height:300px;
+				width:auto;
 				}
 #wrapper{
   position: relative;
@@ -91,7 +93,9 @@
   top:50%;
   text-align: center;
   transform:translateY(-50%);
-  color:#fff;
+  color:white;
+  font-family:'Oswald' , sans-serif;
+  font-style:20px;
 }
 
 .layer img{
@@ -107,7 +111,7 @@
 }
 
 .bottom{
-  background:#222;
+  background-image:url('https://inwesko.github.io/i11.jpeg');
   z-index:1;
 }
 
@@ -117,19 +121,20 @@
 
 .bottom h1{
   color:#FDAB00;
-	background-image:url(i9.jpeg);
+background-color:#010101;
 }
 
 .top{
-  background-image:url('i8.jpeg');
-  color:#222;
+  background-image:url('https://inwesko.github.io/i10.jpeg');
   z-index:2;
   width:50vw;
 }
 
 .top .content-body{
   left: 5%;
-  color:#222;
+  color:white;
+  font-family:'Oswald' , sans-serif;
+  font-style:20px;
 }
 
 .handle{
@@ -166,8 +171,12 @@
     font-size:75%;
   }
 }
-	  </style>
-	  <header>
+.td{
+color:#FDAB00;
+background-color:#010101;
+}
+  </style>
+  <header>
 			<nav>
 	<h1>I N W Ξ S K  O </h1>
 		<ul>
@@ -178,9 +187,8 @@
 		</ul>
 			</nav>
 	</header>
-				<div class='divider'>
-				
-				</div>
+	
+				<div class='divider'></div>
     <section id="wrapper" class="skewed">
     <div class="layer bottom">
       <div class="content-wrap">
@@ -194,14 +202,14 @@
 		
 	
         </div>
-        <img src="" alt="">
+        <img src="https://inwesko.github.io/l1.png" alt="">
       </div>
     </div>
 
     <div class="layer top">
         <div class="content-wrap">
           <div class="content-body">
-            <h1>DOTA 2</h1>
+            <h1 class='td'>DOTA 2</h1>
            	   <p>★T.IN. _clax_</p><br>
 	    	  <p>T.IN. skreepach</p><br>
 		  <p>T.IN. kote123</p><br>
@@ -210,10 +218,9 @@
 		  
 		  
           </div>
-          <img src="" alt="">
+          <img src="https://inwesko.github.io/l2.jpg" alt="">
         </div>
       </div>
-
       <div class="handle"></div>
 	  <script src='teamstructure.js'></script>
 	  </body>
